@@ -1,6 +1,6 @@
-var myApp = angular.module("myApp", []);
+var specialParentsApp = angular.module('specialParentsApp', ['ngRoute', 'ngResource']);
 
-myApp.controller("mainController", ['$scope' , function($scope){
+specialParentsApp.controller("mainController", ['$scope' , function($scope){
 
 	$scope.myDataRef = new Firebase('https://wklkeuwy3lh.firebaseio-demo.com/');
 		
